@@ -1,53 +1,53 @@
 /*  your css code here. If applicable */
-.sec {
-	background-color: #F6F7FB;
-	width: 800px;
-	height: 300px;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
 }
-.top {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 30px;
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
+
 .circle {
-	background-color: white;
-	width: 35px;
-	height: 35px;
-	border: 3px solid #E0E0E0;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #ddd;
 }
-.line {
-	width: 50px;
-	border: 3px solid #E0E0E0;
+
+.circle.active {
+    border-color: #3498db;
+    color: #3498db;
 }
-.active {
-	border: 3px solid #3498DB;
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 200px;
 }
-#prev {
-	background-color: #3498DB;
-	color: white;
-	width: 100px;
-	padding: 13px;
-	margin: 8px;
-	border: none;
-	border-radius: 7px;
-	font-size : 16px;
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
-#next {
-	background-color: #3498DB;
-	color: white;
-	width: 100px;
-	padding: 13px;
-	margin: 8px;
-	border: none;
-	border-radius: 7px;
-	font-size : 16px;
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
 }
